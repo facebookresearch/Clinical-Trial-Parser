@@ -1,0 +1,128 @@
+{
+  "config": {
+    "task": {
+      "WordTaggingTask": {
+        "data": {
+          "Data": {
+            "source": {
+              "TSVDataSource": {
+                "train_filename": "data/ner/train_processed_medical_ner.tsv",
+                "test_filename": "data/ner/test_processed_medical_ner.tsv",
+                "eval_filename": "data/ner/test_processed_medical_ner.tsv",
+                "field_names": [
+                  "word_label",
+                  "text"
+                ]
+              }
+            },
+            "batcher": {
+              "PoolingBatcher": {
+                "train_batch_size": 64,
+                "eval_batch_size": 64,
+                "test_batch_size": 64
+              }
+            },
+            "sort_key": "tokens"
+          }
+        },
+        "trainer": {
+          "epochs": 10,
+          "max_clip_norm": null,
+          "target_time_limit_seconds": null,
+          "num_batches_per_epoch": null,
+          "scheduler": null,
+          "sparsifier": null
+        },
+        "model": {
+          "WordTaggingModel": {
+            "inputs": {
+              "tokens": {
+                "column": "text",
+                "tokenizer": {
+                  "Tokenizer": {
+                    "split_regex": "\\s+",
+                    "lowercase": true
+                  }
+                },
+                "add_bos_token": false,
+                "add_eos_token": false,
+                "use_eos_token_for_bos": false,
+                "max_seq_len": null,
+                "vocab": {
+                  "build_from_data": true,
+                  "size_from_data": 0,
+                  "vocab_files": []
+                }
+              },
+              "labels": {
+                "slot_column": "word_label"
+              }
+            },
+            "embedding": {
+              "load_path": null,
+              "save_path": null,
+              "shared_module_key": null,
+              "embed_dim": 100,
+              "embedding_init_range": null,
+              "pretrained_embeddings_path": "data/embedding/word_embeddings.vec",
+              "padding_idx": null
+            },
+            "representation": {
+              "BiLSTMSlotAttention": {
+                "load_path": null,
+                "save_path": null,
+                "shared_module_key": null,
+                "dropout": 0.2,
+                "lstm": {
+                  "load_path": null,
+                  "save_path": null,
+                  "shared_module_key": null,
+                  "dropout": 0.2,
+                  "lstm_dim": 128,
+                  "num_layers": 1,
+                  "bidirectional": true
+                },
+                "slot_attention": {
+                  "attn_dimension": 64,
+                  "attention_type": "no_attention"
+                },
+                "mlp_decoder": {
+                  "load_path": null,
+                  "save_path": null,
+                  "shared_module_key": null,
+                  "hidden_dims": [
+                    256
+                  ],
+                  "out_dim": null
+                }
+              }
+            },
+            "output_layer": {
+              "WordTaggingOutputLayer": {
+                "load_path": null,
+                "save_path": null,
+                "shared_module_key": null
+              }
+            },
+            "decoder": {
+              "load_path": null,
+              "save_path": null,
+              "shared_module_key": null,
+              "out_dim": null
+            }
+          }
+        },
+        "metric_reporter": {
+          "output_path": "/tmp/test_out.txt"
+        }
+      }
+    },
+    "use_cuda_if_available": false,
+    "save_snapshot_path": "bin/ner.pt",
+    "export_caffe2_path": "bin/ner.c2",
+    "export_onnx_path": "bin/ner.onnx",
+    "export_torchscript_path": null,
+    "random_seed": null,
+    "version": 19
+  }
+}

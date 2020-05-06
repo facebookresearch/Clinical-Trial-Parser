@@ -1,0 +1,140 @@
+Sexual Abstinence, Consent	abstinent	CC02
+Sexual Abstinence, Consent	abstain	CC02
+Sexual Abstinence, Consent	abstinence	CC02
+Contraception, Barrier, Consent	barriers	CC01.02
+Contraception, Barrier, Consent	barrier	CC01.02
+Contraception, Barrier, Consent	double barrier	CC01.02
+Contraception, Barrier, Consent	barrier methods	CC01.02
+Contraception, Barrier, Consent	barrier method	CC01.02
+Cervical Cap, Consent	cervical cap	CC01.02.03
+Contraceptives, Oral, Combined, Consent	birth control pills	CC01.01.02.02
+Contraceptives, Oral, Combined, Consent	oral contraception	CC01.01.02.02
+Contraceptives, Oral, Combined, Consent	oral contraceptive	CC01.01.02.02
+Contraceptives, Oral, Combined, Consent	cocs	CC01.01.02.02
+Contraceptives, Oral, Combined, Consent	pill	CC01.01.02.02
+Contraceptives, Oral, Combined, Consent	oral contraceptives	CC01.01.02.02
+Condoms, Consent	condoms	CC01.02.01
+Condoms, Consent	condom	CC01.02.01
+Contraception, Consent	birth control	CC01
+Contraception, Consent	contraceptive	CC01
+Contraception, Consent	contraception	CC01
+Contraceptives, Implant, Consent	norplant	CC01.03.02
+Contraceptives, Implant, Consent	rod	CC01.03.02
+Contraceptives, Implant, Consent	implant	CC01.03.02
+Contraceptives, Implant, Consent	contraception implant	CC01.03.02
+Contraceptives, Implant, Consent	implanted	CC01.03.02
+Contraceptives, Implant, Consent	implantable	CC01.03.02
+Contraceptives, Implant, Consent	implants	CC01.03.02
+Contraceptives, Patch, Consent	contraceptive patch	CC01.01.02.01
+Contraceptives, Patch, Consent	patch	CC01.01.02.01
+Intrauterine Devices, Copper, Consent	copper iud	CC01.03.01.02|CC01.04.01
+Intrauterine Devices, Copper, Consent	copper ius	CC01.03.01.02|CC01.04.01
+Intrauterine Devices, Copper, Consent	copper intrauterine device	CC01.03.01.02|CC01.04.01
+Intrauterine Devices, Diaphragm	diaphragm	CC01.02.02
+Emergency Contraceptives, Consent	emergency contraception	CC01.04
+Emergency Contraceptives, Pills, Consent	ecps	CC01.04.02
+Emergency Contraceptives, Pills, Consent	plan b	CC01.04.02
+Emergency Contraceptives, Pills, Consent	emergency contraceptive pills	CC01.04.02
+Condoms, Female, Consent	female condom	CC01.02.01.02
+Hormonal Contraception, Consent	hormonal	CC01.01
+Intrauterine Devices, Hormones, Consent	hormonal ius	CC01.03.01.01
+Intrauterine Devices, Hormones, Consent	hormonal intrauterine device	CC01.03.01.01
+Intrauterine Devices, Hormones, Consent	hormonal iud	CC01.03.01.01
+Contraceptives, Injections, Consent	depo provera	CC01.01.01.04
+Contraceptives, Injections, Consent	injection	CC01.01.01.04
+Contraceptives, Injections, Consent	injectable birth control	CC01.01.01.04
+Contraceptives, Injections, Consent	injectable contraceptive	CC01.01.01.04
+Contraceptives, Injections, Consent	injectable contraceptives	CC01.01.01.04
+Contraceptives, Injections, Consent	injectables	CC01.01.01.04
+Contraceptives, Injections, Consent	injected	CC01.01.01.04
+Contraceptives, Injections, Consent	injections	CC01.01.01.04
+Intrauterine Devices, Consent	intrauterine	CC01.03.01
+Intrauterine Devices, Consent	intra uterine	CC01.03.01
+Intrauterine Devices, Consent	iud	CC01.03.01
+Intrauterine Devices, Consent	ius	CC01.03.01
+Intrauterine Devices, Consent	intrauterine device	CC01.03.01
+Intrauterine Devices, Consent	intrauterine devices	CC01.03.01
+Long-Acting Reversible Contraception, Consent	long acting reversible contraception	CC01.03
+Long-Acting Reversible Contraception, Consent	larc	CC01.03
+Condoms, Male, Consent	male condom	CC01.02.01.01
+Contraceptives, Progestins, Pills, Consent	progestin only pills	CC01.01.01.05
+Contraceptives, Progestins, Pills, Consent	pops	CC01.01.01.05
+Vaginal Spermicides, Consent	spermicides	CC01.02.05
+Vaginal Spermicides, Consent	spermicide	CC01.02.05
+Contraceptives, Sponges, Consent	sponge	CC01.02.04
+Contraceptives, Sponges, Consent	sponges	CC01.02.04
+Contraceptives, Vaginal Rings, Consent	vaginal ring	CC01.01.02.03
+Contraceptives, Vaginal Rings, Consent	contraceptive ring	CC01.01.02.03
+Contraceptives, Sterilization, Consent	sterilization implant	CC01.05.01
+Ligation, Tubal	tubal ligation	CC01.05.02
+Vasectomy	vasectomy	CC01.05.03
+Vasectomy	vasectomies	CC01.05.03
+Sterility, Reproductive	sterilization	CC01.05
+Sterility, Reproductive	surgically sterile	CC01.05
+Sterility, Reproductive	sterile	CC01.05
+Ethnicity, African American	black	ET01.01
+Ethnicity, African American	african american	ET01.01
+Ethnicity, Asian	asian	ET01.05
+Ethnicity, Caucasian	white	ET01.03
+Ethnicity, Caucasian	caucasian	ET01.03
+Ethnicity, Caucasian	european american	ET01.03
+Ethnicity, Chinese	chinese	ET01.05.01
+Ethnicity, Hispanic	latino	ET01.04
+Ethnicity, Hispanic	latina	ET01.04
+Ethnicity, Hispanic	hispanic	ET01.04
+Ethnicity, Japanese	japanese	ET01.05.03
+Ethnicity, Korean	korean	ET01.05.02
+Ethnicity, Native American	american indian	ET01.02
+Ethnicity, Native American	native american	ET01.02
+Ethnicity, Pacific Islander	pacific islander	ET01.06
+Ethnicity, Pacific Islander	hawaiian	ET01.06
+Ethnicity, Vietnamese	vietnamese	ET01.05.04
+Language Fluency, Arabic	arabic	LF01.13
+Language Fluency, Cantonese	cantonese	LF01.04.02
+Language Fluency, Chinese	chinese	LF01.04
+Language Fluency, Creole	creole	LF01.07
+Language Fluency, Creole	haitian creole	LF01.07
+Language Fluency, English	english	LF01.01
+Language Fluency, French	french	LF01.03
+Language Fluency, German	german	LF01.05
+Language Fluency, Gujarati	gujarati	LF01.10
+Language Fluency, Hindi	hindi	LF01.08
+Language Fluency, Italian	italian	LF01.06
+Language Fluency, Japanese	japanese	LF01.12
+Language Fluency, Korean	korean	LF01.11
+Language Fluency, Mandarin	mandarin	LF01.04.01
+Language Fluency, Spanish	spanish	LF01.02
+Language Fluency, Urdu	urdu	LF01.09
+Access, Android Phone	android	TA01.03.03.02
+Access, Cellphone	cellular telephone	TA01.03.02
+Access, Cellphone	mobile	TA01.03.02
+Access, Cellphone	cell phone	TA01.03.02
+Access, Cellphone	cell	TA01.03.02
+Access, Cellphone	mobile phone	TA01.03.02
+Access, Computer	computer	TA01.02
+Access, Computer	laptop	TA01.02
+Access, Computer	desktop	TA01.02
+Access, DVD Player	dvd player	TA01.04
+Access, iPhone	iphone	TA01.03.03.01
+Access, iPhone	ios	TA01.03.03.01
+Access, Landline Telephone	land line telephone	TA01.03.01
+Access, Landline Telephone	land line phone	TA01.03.01
+Access, Landline Telephone	landline	TA01.03.01
+Access, Smart Phone	smartphone	TA01.03.03
+Access, Smart Phone	smart phone	TA01.03.03
+Access, Smart Phone	smart device	TA01.03.03
+Access, Tablet	tablet	TA01.01
+Access, Tablet	ipad	TA01.01
+Access, Telephone	phone	TA01.03
+Access, Telephone	phone number	TA01.03
+Access, Telephone	telephone	TA01.03
+Data Plan	data plan	TA02.01
+Data Plan	mobile data	TA02.01
+Email	email	TA02.04
+Internet	wi fi	TA02.03
+Internet	web	TA02.03
+Internet	internet	TA02.03
+Internet	wifi	TA02.03
+Text Messages	text messages	TA02.02
+Text Messages	text messaging	TA02.02
+Text Messages	sms	TA02.02

@@ -1,0 +1,182 @@
+Brain Cancer	brain metastasis
+Brain Cancer	brain metastases
+Hepatitis B	b
+Hepatitis C	c
+Ovariectomy	bilateral oophorectomy
+ECOG	ecog	X100
+ECOG	eastern cooperative oncology group performance status scores	X100
+ECOG	eastern cooperative oncology group scale performance status	X100
+ECOG	eastern cooperative oncology group performance status	X100
+ECOG	eastern cooperative oncology group performance score	X100
+ECOG	eastern cooperative oncology group status	X100
+ECOG	eastern cooperative oncology group score	X100
+ECOG	eastern cooperative oncology group	X100
+ECOG	eastern clinical oncology group performance status	X100
+Cancer of the Uterine Cervix	cervical carcinoma situ	
+Cancer of the Uterine Cervix	situ cervix	
+Cancer of the Uterine Cervix	situ cervical	
+Cancer of the Uterine Cervix	resected situ cervical malignancy
+Cancer of the Uterine Cervix	hcc cervical cancer situ
+Olaparib	olaparib
+Gemcitabine	gemcitabine
+Guillain-Barre Syndrome	guillain barre
+Autism Spectrum Disorder	autism spectrum
+Catheter Ablation	ablation
+Angina Pectoris	angina
+Angina, Unstable	uncontrolled angina
+Angina, Unstable	severe unstable angina
+Angina, Unstable	uncontrolled or unstable angina
+Angina, Unstable	chronic unstable angina
+Men	men
+Men	man
+Men	males
+Men	male
+Men	female male
+Women	women
+Women	woman
+Women	females
+Women	female
+Women	female male
+Breast Feeding	nursing
+Breast Feeding	lactating
+Breast Feeding	breastfeed
+Breast Feeding	breastfeeding
+Breast Feeding	breast feeding
+Breast Feeding	lactation
+Pregnancy	pregnant
+Pregnancy	pregnancy
+Pregnancy	become pregnant
+Hepatitis	Hepatitis	
+Hepatitis	hepatitis and hiv
+Diabetes Mellitus, Type 1	diabetes i
+Diabetes Mellitus, Type 1	diabetes 1
+Diabetes Mellitus, Type 2	diabetes ii
+Diabetes Mellitus, Type 2	diabetes 2
+Bipolar Disorder	bipolar
+Leptomeningeal Neoplasms	leptomeningeal metastases
+Language Fluency, English	english
+Language Fluency, English	english speaking
+Language Fluency, English	non-english speaking
+Language Fluency, English	speak english
+Language Fluency, English	speak and read english
+Language Fluency, English	inability to speak english
+Language Fluency, English	read and write english
+Language Fluency, English	read and comprehend english
+Language Fluency, English	able to read, speak and understand english
+Language Fluency, English	ability to read, speak and write english
+Language Fluency, English	able to read and write english fluently
+Language Fluency, English	speak and understand english
+Language Fluency, English	able to read and comprehend english
+Language Fluency, English	read or understand english
+Language Fluency, English	able to speak english
+Language Fluency, English	able to read english
+Language Fluency, English	ability to read and speak fluent english
+Language Fluency, English	read and comprehend english
+Language Fluency, English	speak english or spanish
+Language Fluency, English	english or spanish
+Language Fluency, English	speak english and/or spanish
+Language Fluency, Spanish	spanish
+Language Fluency, Spanish	speak english or spanish
+Language Fluency, Spanish	english or spanish
+Language Fluency, Spanish	speak english and/or spanish
+Mental Disorder	psychiatric condition
+Mental Disorder	mental illness
+Arrhythmias, Cardiac	uncontrolled arrhythmia
+Melanoma	melanoma situ
+Kidney	kidney
+Kidney	renal
+Magnetic Resonance Imaging	magnetic resonance imaging
+Magnetic Resonance Imaging	mri
+Magnetic Resonance Imaging	mri contrast
+Nitinol	nitinol
+Suicidal Ideation	suicidal
+Breast Carcinoma In Situ	breast situ
+Breast Carcinoma In Situ	situ breast cancer
+Diabetes Mellitus, Type 1	diabetes i
+Diabetes Mellitus, Type 1	diabetes 1
+Gastrointestinal Tract	gi
+Gastrointestinal Tract	gi medication
+Gastrointestinal Tract	gi esophagram
+Gastrointestinal Tract	gi bleeding
+Gastrointestinal Tract	gi bleeding grade
+Gastrointestinal Tract	gastrointestinal gi
+Gastrointestinal Tract	interfere gi
+Gastrointestinal Tract	gastrointestinal
+fMRI	fmri
+fMRI	functional mri
+Pembrolizumab	pembrolizumab
+Fishes	fish
+Fishes	fishes
+Fludarabine	fludarabine
+Reagents	agent
+Reagents	agents
+Reagents	modifying agents
+Age	age
+Age	ages
+Neoplasms	tumor
+Neoplasms	solid tumor
+Neoplasms	metastatic solid tumor
+Neoplasms	malignant solid tumor
+Pharmaceutical Preparations	drug
+Pharmaceutical Preparations	drugs
+Pharmaceutical Preparations	drug components
+Pharmaceutical Preparations	drug constituents
+Pharmaceutical Preparations	drug product
+Pharmaceutical Preparations	ingredient drug
+Pharmaceutical Preparations	product
+Pharmaceutical Preparations	medication
+Pharmaceutical Preparations	compounds
+Pharmaceutical Preparations	components
+Pharmaceutical Preparations	formulation
+Excipients	drug excipients
+Vaccines	vaccine components
+Durvalumab	durvalumab
+Cancer	metastatic
+Cancer	situ cancers
+Cancer	carcinoma situ
+Cancer	treated situ
+Cancer	additional malignancy
+Cancer	concurrent malignancy
+Cancer	primary malignancy
+Cancer	distant metastases
+HIV	hiv
+HIV	hiv virus
+HIV	viral hiv
+HIV	viral infections hiv
+HIV	human immunodeficiency hiv
+HIV	hepatitis and hiv
+HIV	hiv infection screening
+HIV	hiv infected
+HIV	human immunodeficiency virus hiv
+HIV	infections human immunodeficiency virus hiv
+HIV	confirmed hiv
+HIV	undetectable hiv
+HIV	primary hiv infection
+HIV	hiv status
+HIV	hiv testing
+HIV	hiv diagnostic
+HIV Antibodies	hiv antibody
+Diabetes Mellitus	diabetes
+Diabetes Mellitus	diabetes mellitus
+Alzheimer Disease	alzheimer
+Tuberculosis	tb
+Tuberculosis	tb bacillus
+Polymerase Chain Reaction	rt-pcr
+Polymerase Chain Reaction	rt-pcr assay
+Polymerase Chain Reaction	transcription polymerase chain reaction assay
+Blood Platelet Disorders	platelet disorder
+COVID-19	covid-19	C01.925
+COVID-19	covid-19+	C01.925
+COVID-19	covid-19 disease	C01.925
+COVID-19	covid-19 infection	C01.925
+COVID-19	covid-19 documented	C01.925
+COVID-19	covid	C01.925
+COVID-19	covid 19	C01.925
+COVID-19	coronavirus	C01.925
+COVID-19	cov-2	C01.925
+COVID-19	sars cov-2	C01.925
+COVID-19	sars-cov-2	C01.925
+COVID-19	2019-ncov	C01.925
+COVID-19	covid disease	C01.925
+COVID-19	covid infection	C01.925
+COVID-19	sars-cov2 infection	C01.925

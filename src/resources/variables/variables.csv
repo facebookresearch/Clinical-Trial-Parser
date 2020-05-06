@@ -1,0 +1,71 @@
+#variable_id,variable_type,variable_name,display_name,aliases,bounds,default_unit_name,question
+100,ordinal,ecog,ECOG,ecog|eastern cooperative oncology group|ecog performance grade|ecog performance status|ecog ps|eastern cooperative oncology group performance status,0|1|2|3|4,,What is your ECOG performance status?
+101,ordinal,gleason_score,Gleason score,gleason|gleason score|gleason grade,1|2|3|4|5|6|7|8|9|10,,What is your Gleason score?
+102,ordinal,nyha,NYHA,nyha|new york heart association|new york heart association classification,1|2|3|4,,What is your NYHA class?
+103,ordinal,cps,Child-Pugh score,child pugh|child-pugh|child-pugh score,5|6|7|8|9|10|11|12|13|14|15,,What is your Child-Pugh score?
+104,ordinal,fitzpatrick_skin_type,Fitzpatrick skin type,fitzpatrick skin type*|Fitzpatrick phototype*|fitzpatrick,1|2|3|4|5|6,,What is your Fitzpatrick skin type?
+105,ordinal,fitzpatrick_wrinkle_scale,Fitzpatrick wrinkle scale,fitzpatrick wrinkle,1|2|3|4|5|6|7|8|9,,What is your Fitzpatrick wrinkle scale?
+200,numerical,age,Age,age|ages|aged,0.0|120.0,year,How old are you?
+201,numerical,height,Height,heigh*,0.0|500.0,,What is your height?
+202,numerical,weight,Weight,weigh*|body weigh*,0.0|300.0,,What is your weight?
+203,numerical,bmi,BMI,bmi|body mass index,0.0|100.0,kg/m2,What is your BMI?
+204,numerical,waist_circumference,Waist circumference,waist|waist circumference,0.0|200.0,,What is your waist circumference?
+205,numerical,arm_circumference,Arm circumference,arm_circumference,1.0|100.0,,What is your arm circumference?
+206,numerical,life_expectancy,Life expectancy,life expectancy,0.0|120.0,,What is your life expectancy?
+207,numerical,body_temperature,Body temperature,temperature|temperature measurement|fever,10.0|120,,What is your body temperature?
+300,numerical,sbp,SBP,sbp|systolic blood pressure|systolic bp|systolic,10.0|300.0,mmhg,What is your blood pressure?
+301,numerical,dbp,DBP,dbp|diastolic blood pressure|diastolic bp|diastolic,10.0|150.0,mmhg,What is your blood pressure?
+302,numerical,sbp/dbp,Blood pressure,bp|blood pressure,10.0|300.0,mmgh,What is your blood pressure?
+303,numerical,lvef,LVEF,lvef|left ventricular ejection fraction|cardiac ejection fraction,0.0|100.0,%,What is your left ventricular ejection fraction?
+304,numerical,cqt,cQT,corrected qt interval|qtc interval|qtc,,,What is your corrected QT interval?
+305,numerical,troponin_level,Troponin level,troponin level|serum tropinin|troponin,,,What is your troponin level?
+400,numerical,a1c,A1c,a1c|hba1c|hgba1c|hga1c|hgb-a1c|hemoglobin a1c|glycosylated hemoglobin|glycated hemoglobin|glycohemoglobin|hga1c blood test,0.0|15.0,%,What is your hemoglobin A1c?
+401,numerical,fasting_blood_sugar_level,Fasting blood sugar level,blood sugar level*|blood sugar|plasma glucose level*|blood glucose level*|plasma glucose|fasting plasma glucose|fasting glucose|fpg,0.0|1000.0,,What is your fasting blood sugar level?
+402,numerical,fructosamine,Fructosamine,fructosamine|serum fructosamine,1.0|1000.0,,What is your fructosamine level?
+403,numerical,hb_count,Hb count,hemoglobin count|hb count|hemoglobin concentration|hemoglobin level*|hgb|hb|hemoglobin,,,What is your hemoglobin count?
+404,numerical,wbc,WBC,wbc|white blood cell count|white blood cell|leukocytes|leucocytes|leukopenia,,,What is your white blood cell count?
+405,numerical,platelet_count,Platelet count,platelet count|platelet|platelets,,,What is your platelet count?
+406,numerical,potassium_level,Potassium level,potassium|potassium level,0.0|15.0,,What is your potassium level?
+407,numerical,total_bilirubin_level,Bilirubin level,bilirubin,,,What is your total bilirubin level?
+408,numerical,anc,ANC,anc|absolute neutrophil count|neutrocyte count|absolute neutrophil|blood neutrophil|neutrophil|neutrophils|neutrocytes|heterophils,,,What is your absolute neutrophil count?
+409,numerical,bal,BAL,bal|blood albumin level|serum albumin|albumin,,,What is your blood albumin level?
+410,numerical,urinary_albumin,Urinary albumin,urinary albumin level|urinary albumin,,,What is your urinary albumin level?
+411,numerical,ast,AST,ast|aspartate aminotransferase|sgot,0.0|20.0,,What are your ALT and AST values?
+412,numerical,alt,ALT,alt|alanine aminotransferase|sgpt,0.0|20.0,,What are your ALT and AST values?
+413,numerical,ast/alt,AST/ALT,ast/alt|asat/alat|sgot/sgpt|ast and alt|ast or alt|sgot or sgpt|aspartate aminotransferase or alanine aminotransferase,0.0|20.0,,What are your ALT and AST values?
+414,numerical,ast_alt_ratio,AST/ALT ratio,ast/alt ratio|sgot/sgpt ratio,0.0|20.0,,What is your AST/ALT ratio?
+415,numerical,creatinine_level,Creatinine level,serum creatinine|creatinine|creatinine level,,,What is your creatinine level?
+416,numerical,calculated_creatinine_clearance,Calculated creatinine clearance,crcl|creatinine clearance|calculated creatinine clearance|cr clearance|cockcroft-gault,,,What is your calculated creatinine clearance?
+417,numerical,testosterone_level,Testosterone level,testosterone level|castrate testosterone level|castrate levels of testosterone|castrate level of serum testosterone|baseline testosterone|serum testosterone|serum total testosterone concentration,,,What is your castrate testosterone level?
+418,numerical,glomerular_filtration_rate,Glomerular filtration rate,gfr|egfr|glomerular filtration rate|estimated glomerular filtration rate,,,What is your estimated glomerular filtration rate?
+419,numerical,aec,AEC,absolute eosinophil count|aec,0.0|10000,,What is your absolute eosinophil count?
+420,numerical,lfts,LFTs,liver function tests|lfts|lfs,,, What are your liver function tests?
+421,numerical,ferritin_level,Ferritin level,ferritin,,,What is your ferretin level?
+422,numerical,magnesium_level,Magnesium level,magnesium|magnesium level,,,What is your magnesium level?
+423,numerical,calcium_level,Calcium level,calcium|calcium level,,,What is your calcium level?
+500,numerical,total_cholesterol,Total cholesterol,plasma total cholesterol|total cholesterol|serum cholesterol|cholesterol,0.0|500.0,,What is your total cholesterol level?
+501,numerical,ldl_cholesterol,LDL cholesterol,ldl|ldl-cholesterol|ldl cholesterol|ldl-c|low-density lipoprotein cholesterol|low density lipoprotein cholesterol,0.0|500.0,,What is your LDL cholesterol level?
+502,numerical,hdl_cholesterol,HDL cholesterol,hdl|hdl-cholesterol|hdl cholesterol|hdl-c|high-density lipoprotein cholesterol|high density lipoprotein cholesterol,0.0|500.0,,What is your HDL cholesterol level?
+503,numerical,non_hdl_cholesterol,Non-HDL cholesterol,non-hdl-cholesterol|non-hdl cholesterol|non-hdl-c|non-high-density lipoprotein cholesterol,0.0|500.0,,What is your non-HDL cholesterol level?
+504,numerical,ldl_hdl_ratio,LDL/HDL ratio,ldl/hdl ratio,0.0|10.0,,What is your cholesterol LDL/HDL ratio?
+505,numerical,fasting_triglyceride_level,Fasting triglyceride level,fasting triglyceride level*|fasting triglyceride*|fasting plasma triglyceride*|fasting blood glucose level*|fasting triglyceride|fasting triglycerides,0.0|1000.0,,What is your fasting triglyceride level?
+506,numerical,triglyceride_level,Triglyceride level,triglyceride level*|triglyceride*|plasma triglyceride*|blood glucose level*|triglyceride|triglycerides,0.0|1000.0,,What is your triglyceride level?
+600,numerical,karnofsky_score,Karnofsky score,kps|karnofsky|karnofsky performance score|karnofsky score|lansky|lansky score,0.0|100.0,,What is your Karnofsky score?
+601,numerical,fish_ratio,FISH ratio,fish ratio,0.0|10.0,,What is your FISH ratio?
+602,numerical,psa_level,PSA,psa|prostate specific antigen|prostate-specific antigen|psa progression,,,What is your PSA level?
+603,numerical,tumor_size,Tumor size,tumor size,,,What is your tumor size?
+604,numerical,lesion_size,Lesion size,lesion size,,,What is your lesion size?
+700,numerical,inr,INR,international normalized ratio|inr,,,What is your international normalized ratio?
+800,numerical,iop,IOP,intraocular pressure|iop,0.0|50.0,,What is your intraocular pressure?
+900,numerical,respiratory_rate,Respiratory rate,respiratory rate|respiratory frequency|rr,,breaths/min,What is your respiratory rate?
+901,numerical,heart_rate,Heart rate,heart rate|hr,,beats/min,What is your heart rate?
+902,numerical,po2,pO2,po2|partial presure of oxygen,,,What is your pO2?
+903,numerical,spo2,SpO2,spo2|oxygen saturation,,,What is your SpO2?
+904,numerical,pf_ratio,P/F ratio,p/f ratio|pao2/fio2|pao2/fio2 ratio|partial pressure of oxygen/oxygen concentration|partial pressure of oxygen/fraction of inspired oxygen|partial pressure of arterial oxygen to fraction of inspired oxygen ratio,,mmhg,What is your P/F ratio?
+905,numerical,peep,PEEP,positive end-expiratory pressure|positive end expiratory pressure|peep,,,What is the PEEP value?
+906,numerical,sofa,SOFA,sofa|sequential organ failure assessment score,0|24,,What is your SOFA score?
+907,numerical,news2_score,NEWS-2 score,news-2 score|news 2|news-2,,,What is your NEWS-2 score?
+908,numerical,d_dimer_level,D-dimer level,d-dimer|d dimer,,,What is your D-dimer level?
+909,numerical,c_reactive_protein_level,C-reactive protein level,c-reactive protein|crp,,,What is your C-reactive protein level?
+910,numerical,lactate_dehydrogenase_level,Lactate dehydrogenase level,lactate dehydrogenase|ldh,,,What is your lactate dehydrogenase level?
+911,numerical,pulmonary_infiltrate_level,Pulmonary infiltrate,pulmonary infiltrate|lung infiltrates,,,What is your pulmonary infiltrate level?

@@ -1,0 +1,766 @@
+#nct_id,title,has_us_facility,conditions,eligibility_criteria
+NCT04346355,Efficacy of Early Administration of Tocilizumab in COVID-19 Patients,false,COVID-19 Pneumonia,"
+        Inclusion Criteria:
+
+          -  age > 18 years
+
+          -  Informed consent for participation in the study
+
+          -  Real time polymerase chain reaction (PCR) diagnosis of Sars-CoV2 infection
+
+          -  Hospitalization due to clinical / instrumental diagnosis (high resolution chest CT
+             scan or chest x-ray or pulmonary ultrasound)
+
+          -  Presence of acute respiratory distress syndrome with arterial partial pressure of
+             oxygen / fraction of inspired oxygen (PaO2 / FiO2) between 200 and 300 mm/Hg
+
+          -  Presence of exaggerated inflammatory response defined by the presence of at least 1 of
+             the following criteria:
+
+          -  At least one body temperature measurement >38° C in the past two days;
+
+          -  Serum CRP greater than or equal to 10 mg/dl;
+
+          -  CRP increase of at least twice the basal value
+
+        Exclusion Criteria:
+
+          -  Patients with respiratory distress syndrome with arterial partial pressure of oxygen /
+             fraction of inspired oxygen (PaO2 / FiO2) <200 mm/Hg or
+
+          -  Patients in non-invasive ventilation or
+
+          -  Patients in invasive ventilation or presence of shock or presence of concomitant organ
+             failure that requires admission to the Intensive Care Unit
+
+          -  Severe heart and kidney failure
+
+          -  Pregnant or breastfeeding patient
+
+          -  Patient who, in the opinion of the clinician or by the patient's express will, will
+             not go to intensive care regardless of the evolution of the lung picture.
+
+          -  Known hypersensitivity to TCZ or its excipients
+
+          -  Patient being treated with immuno-depressors or anti-rejection drugs
+
+          -  Known active infections or other clinical conditions that contraindicate TCZ and
+             cannot be treated or resolved according to the physician's judgment
+
+          -  glutamate-pyruvate transaminase (GPT) or glutamine oxaloacetic transaminase (GOT) > 5
+             times the upper limit of the norm
+
+          -  Neutrophils <500 /mmc
+
+          -  Platelets <50.000 /mmc
+
+          -  Diverticulitis or intestinal perforation
+
+          -  Suspicion of latent tuberculosis
+      "
+NCT04344951,"Chloroquine Phosphate Against Infection by the Novel Coronavirus SARS-CoV-2 (COVID-19): The HOPE Open-Label, Non Randomized Clinical Trial",false,"Covid-19|Pneumonia, Viral","
+        Inclusion Criteria:
+
+          -  Age 18 or older
+
+          -  Both genders
+
+          -  For women of childbearing age, they should use or be willing to use a double
+             contraceptive method during the study. A urine pregnancy test to exclude pregnancy
+             will be performed prior to study initiation.
+
+          -  Written consent after information provided by the patient or the legal representative
+             in the event that the patient cannot consent.
+
+          -  Upper respiratory or lower respiratory tract infection, as in Annexes II and III
+             respectively.
+
+          -  Positive respiratory secretion test for SARS-CoV-2 virus by molecular techniques or
+             positive blood IgM titers.
+
+        Exclusion Criteria:
+
+          -  Under 18 years of age
+
+          -  Denial of written consent
+
+          -  Any patient case where it has been decided not to rejuvenate
+
+          -  Serum AST values greater than 5 times the upper normal range
+
+          -  QTc interval in rest electrocardiogram greater than 500msecs
+
+          -  Pregnancy or lactation. Urgent pregnancy test to exclude pregnancy before inclusion in
+             the study
+      "
+NCT04344444,Treatment in Patients With Suspected or Confirmed COVID-19 With Early Moderate or Severe Disease,true,COVID-19,"
+        Inclusion Criteria:
+
+          -  Age greater than 18 years
+
+          -  Positive SARS-CoV-2 testing or consistent clinical syndrome (based on clinical picture
+             e.g. characteristic infiltrates on chest x-ray, laboratory findings, and with
+             agreement by two physicians) in patients under investigation (PUIs).
+
+          -  Onset of symptoms < 7 days from date of enrollment
+
+          -  Oxygen saturation of >94% on room air with defined risk factors (Table 1) consistent
+             with moderate disease OR oxygen saturation of < 94% on room air consistent with severe
+             disease
+
+          -  Ability and willingness to comply with study procedures
+
+        Exclusion Criteria:
+
+          -  QTc greater than 450 milliseconds on screening EKG
+
+          -  Pregnant or lactating women
+
+          -  Inability to take oral pills or inability to use a feeding tube
+
+          -  Inability to obtain informed consent either from the patient or from the next of kin
+             if patient is incapacitated. For the purpose of this study obtaining a verbal consent
+             from a family member on the phone with a witness will be considered acceptable since
+             there is a 'no visitor' policy in force at hospitals.
+
+          -  Patients requiring ICU level care
+
+          -  use of azithromycin or hydroxychloroquine within 30 days prior to admission
+      "
+NCT04344080,Effect of CytoSorb Adsorber on Hemodynamic and Immunological Parameters in Critical Ill Patients With COVID-19,false,COVID-19,"
+        Inclusion Criteria:
+
+          -  confirmed COVID-19 disease
+
+          -  refractory shock with need for norepinephrine ≥ 0.2 μg/kg/min for MAP ≥ 65 mmHg
+
+          -  IL6 ≥ 500 ng/l
+
+          -  Indication for CRRT or ECMO
+
+        Exclusion Criteria:
+
+          -  Liver cirrhosis Child Pugh C
+
+          -  ""do not resuscitate""-order
+
+          -  expected survival due to comorbidities < 14 days
+
+          -  pregnancy or breastfeeding
+
+          -  participation in another interventional trial
+      "
+NCT04344015,COVID-19 Plasma Collection,true,COVID-19,"
+        Inclusion Criteria:
+
+          -  Age 18 years and older
+
+          -  Prior diagnosis of COVID-19 documented by a laboratory test approved by the FDA
+
+          -  Either: Complete resolution of all COVID-related symptoms for 14-28 days at the time
+             of blood donation AND negative repeated SARS-CoV-2 test OR Complete resolution of all
+             COVID-related symptoms for > 28 days
+
+          -  Male donors, never-pregnant female donors, or previously pregnant female donors
+             negative for HLA antibodies
+
+          -  Meet all criteria for volunteer blood donation per Jefferson Blood Donor Center and
+             the FDA
+
+        Exclusion Criteria:
+
+          -  Failure to pass standard volunteer blood donor screening criteria required by the
+             Jefferson Blood Donor Center and the FDA
+
+          -  Female donors with HLA antibodies (per FDA requirements for convalescent plasma
+             donors)
+
+          -  Inadequate venous access for phlebotomy
+
+          -  Currently pregnant
+      "
+NCT04343989,A Randomized Placebo-controlled Safety and Dose-finding Study for the Use of the IL-6 Inhibitor Clazakizumab in Patients With Life-threatening COVID-19 Infection,true,COVID-19,"
+        Inclusion Criteria:
+
+        In order to be eligible to participate in this study, the patients must meet all of the
+        following criteria:
+
+          1. At least 18 years of age
+
+          2. Confirmed COVID-19 disease (by Cobas SARS-CoV-2 real time RT-PCR using nasopharyngeal
+             swab sample, or equivalent test available to be performed by the NYU Langone clinical
+             laboratory). Effort will be made to have the confirmatory test result <72 hours prior
+             to enrollment however given overall clinical demand this may not be feasible in all
+             cases.
+
+          3. Respiratory failure manifesting as: Acute Respiratory Distress Syndrome (defined by a
+             P/F ratio of <200), OR SpO2 < 90% on 4L (actual or expected given higher O2
+             requirement) OR increasing O2 requirements over 24 hours, PLUS 2 or more of the
+             following predictors for severe disease:
+
+             CRP > 35 mg/L Ferritin > 500 ng/mL D-dimer > 1 mcg/L Neutrophil-Lymphocyte Ratio > 4
+             LDH > 200 U/L Increase in troponin in patient w/out known cardiac disease
+
+          4. Has a consent designee willing to provide informed consent on behalf of the patient
+             (this assumes that a mechanically ventilated patients lacks capacity to consent on
+             his/her own behalf. Should it be deemed that the patient has capacity to consent,
+             consent may be obtained from the patient.)
+
+          5. Women of childbearing potential must be willing and able to use at least one highly
+             effective contraceptive method for a period of 5 months following the study drug
+             administration. In the context of this study, an effective method is defined as those
+             which result in low failure rate (i.e. less than 1% per year) when used consistently
+             and correctly such as:
+
+               1. combined (estrogen and progestogen containing) hormonal contraception combined
+                  (estrogen and progestogen containing) hormonal contraception (oral, intravaginal,
+                  or transdermal)
+
+               2. progestogen-only hormonal contraception associated with inhibition of ovulation
+                  (oral, injectable, implantable)
+
+               3. intrauterine device (IUD)
+
+               4. intrauterine hormone-releasing system (IUS)
+
+               5. vasectomized partner
+
+               6. bilateral tubal occlusion
+
+               7. true abstinence. when this is in line with the preferred and usual lifestyle of
+                  the subject. Periodic abstinence, such as calendar, ovulation, symptothermal,
+                  postovulation methods, and withdrawal are not acceptable methods of
+                  contraception.
+
+          6. Men must be willing to use a double-barrier contraception from enrollment until at 5
+             months after the last dose of study drug, if not abstinent.
+
+        Exclusion Criteria:
+
+        An individual who meets any of the following criteria will be excluded from participation
+        in this study:
+
+          1. Evidence of irreversible injury deemed non-survivable even if the pulmonary failure
+             recovers (for example severe anoxic brain injury)
+
+          2. Known active inflammatory bowel disease
+
+          3. Known active, untreated diverticulitis
+
+          4. Known untreated bacteremia
+
+          5. Pregnancy. (The protocol will exclude pregnant subjects given the lack of overall data
+             on use of clazakizumab in pregnancy however the study team would consider a protocol
+             revision should more than 3 potential pregnant study subjects be excluded on this
+             basis).
+
+          6. Known hypersensitivity to the clazakizumab
+      "
+NCT04342182,Convalescent Plasma as Therapy for Covid-19 Severe SARS-CoV-2 Disease (CONCOVID Study),false,COVID-19,"
+        Inclusion Criteria:
+
+          -  Patients with PCR confirmed COVID disease
+
+          -  Written informed consent by patient or legal patient representative
+
+          -  Age >18
+
+        Exclusion Criteria:
+
+          -  Patient in which a ""no ICU admission"" or ""no invasive ventilation"" restriction was
+             implemented at the time of screening for the study
+
+        Donors: Eligibility for plasma donation
+
+        Inclusions Criteria:
+
+          -  A history of COVID infection that was documented by PCR
+
+          -  Known ABO-Resus(D) blood group
+
+          -  A negative screening for irregular antibodies
+
+          -  Asymptomatic for at least 24 hours
+
+          -  Donors will be restricted to those who had a symptomatic COVID infection defined as
+             documented fever 38.0 or higher C for at least 48 hours.
+
+          -  Written informed consent regarding the plasmapheresis procedure
+
+        Exclusion Criteria:
+
+          -  Age <18 years
+
+          -  Weight <45kg
+
+          -  Medical history of heart failure
+
+          -  History of transfusion with red blood cells, platelets or plasma
+
+          -  Born as a female person. The reason for this is a higher incidence of transfusion
+             related acute lung injury (TRALI) after plasma transfusion from a female donor
+      "
+NCT04341389,A Phase II Clinical Trial to Evaluate the Recombinant Vaccine for COVID-19 (Adenovirus Vector),false,COVID-19,"
+        Inclusion Criteria:
+
+          -  Aged between 18 and 60 years.
+
+          -  Able to understand the content of informed consent and willing to sign the informed
+             consent
+
+          -  Able and willing to complete all the secluded study process during the whole 6 months
+             study follow-up period.
+
+          -  Negative in HIV diagnostic test.
+
+          -  Negative in serum antibodies (IgG and IgM) screening of COVID-19.
+
+          -  Axillary temperature ≤37.0°C.
+
+          -  The BMI index is 18.5-30.0.
+
+          -  General good health as established by medical history and physical examination.
+
+        Exclusion Criteria:
+
+          -  Family history of seizure, epilepsy, brain or mental disease
+
+          -  Subject allergic to any component of the investigational vaccine, or a more severe
+             allergic reaction and history of allergies in the past.
+
+          -  Woman who is pregnant, breast-feeding or positive in β-HCG (human chorionic
+             gonadotropin) pregnancy test (urine) on day of enrollment, or become pregnant during
+             the next 6 months
+
+          -  Any acute fever disease or infections.
+
+          -  History of SARS
+
+          -  Major congenital defects or not well-controlled chronic illness, such as asthma,
+             diabetes, or thyroid disease.
+
+          -  Serious cardiovascular diseases, such as arrhythmia, conduction block, myocardial
+             infarction, severe hypertension without controllable drugs, etc.
+
+          -  Hereditary angioneurotic edema or acquired angioneurotic edema
+
+          -  Urticaria in last one year
+
+          -  No spleen or functional spleen.
+
+          -  Platelet disorder or other bleeding disorder may cause injection contraindication
+
+          -  Faint at the sight of needles.
+
+          -  Prior administration of immunodepressant or corticosteroids, antianaphylaxis
+             treatment, cytotoxic treatment in last 6 months.
+
+          -  Prior administration of blood products in last 4 months
+
+          -  Prior administration of other research medicines in last 1 month
+
+          -  Prior administration of attenuated vaccine in last 1 month
+
+          -  Prior administration of inactivated vaccine in last 14 days
+
+          -  Current anti-tuberculosis prophylaxis or therapy
+
+          -  According to the judgement of investigator,various medical, psychological, social or
+             other conditions, those could affect the subjects to sign informed consent.
+      "
+NCT04340557,Do Angiotensin Receptor Blockers Mitigate Progression to Acute Respiratory Distress Syndrome With SARS-CoV-2 Infection,true,SARS-CoV Infection,"
+        Inclusion Criteria:
+
+          -  Confirmed COVID-19 positive test result
+
+          -  Mild to moderate respiratory disease defined by oxygen requirement of at least 2 L/min
+             to maintain oxygen saturation level ≥92%.
+
+          -  Systolic blood pressure ≥ 110 mmHg.
+
+          -  Age ≥18 years old.
+
+          -  Access to an electronic device that is able to access DocuSign® online and email for
+             consenting.
+
+          -  Able to read/write/speak English or Spanish fluently.
+
+          -  Subjects must have the ability to understand the requirements of the study, provide
+             informed consent, and provide authorization of use and disclosure of personal health
+             information.
+
+          -  Negative pregnancy test for women of childbearing potential.
+
+        Exclusion Criteria:
+
+          -  Severe allergy to any ARB or ACE-inhibitor, including angioedema
+
+          -  In the intensive care unit at screening.
+
+          -  Home meds include any kind of ACE inhibitor or ARB
+
+          -  SBP <110 mmHg
+
+          -  Acute Kidney Injury (50% reduction in GFR from baseline at admission to any time
+             during treatment in the study treatment arm)
+
+          -  Hyperkalemia >5.0 mmol/L at baseline or any time during treatment in the study
+             treatment arm
+
+          -  Creatinine Clearance < 30 ml/min at baseline or any time during treatment in the study
+             treatment arm
+      "
+NCT04340050,COVID-19 Convalescent Plasma,true,Coronavirus,"
+        Donor Inclusion Criteria:
+
+          -  Age greater or equal to 18
+
+          -  Able to donate blood per blood bank standard guidelines
+
+          -  Prior diagnosis of COVID-19 documented by a laboratory test (confirmed)
+
+          -  Complete resolution of symptoms at least 28 days prior to donation
+
+          -  Female donors who have never been pregnant, previously pregnant female donors negative
+             for HLA antibodies (HLA screening), or male donors
+
+        Donor Exclusion Criteria:
+
+          -  Does not provide consent
+
+          -  Does not meet standard blood bank donation guidelines
+
+          -  Unsuccessful blood donation
+
+        Recipient Inclusion Criteria:
+
+          -  Patients must be 18 years of age or older
+
+          -  Must have laboratory-confirmed COVID-19
+
+          -  Must have severe or immediately life-threatening COVID-19
+
+               -  Severe defined as dyspnea, respiratory frequency ≥ 30/min, blood oxygen
+                  saturation ≤ 93%, partial pressure of arterial oxygen to fraction of inspired
+                  oxygen ratio < 300, and/or lung infiltrates > 50% within 24 to 48 hours
+
+               -  Life-threatening defined as respiratory failure, septic shock, and/or multiple
+                  organ dysfunction or failure. Lower priority should be given to patients with
+                  septic shock or multiple organ dysfunction or failure since their disease may
+                  have progressed to a point where they are not able to benefit from convalescent
+                  plasma therapy.
+
+          -  Must be less than 21 days from the start of illness
+
+          -  Patient is willing and able to provide written informed consent and comply with all
+             protocol requirements. If the patient is not able to consent, we will obtain consent
+             from the power of attorney or a health care proxy for the patient as determined by the
+             Illinois Healthcare Surrogate Act
+
+          -  Patient, power of attorney or health care proxy agrees to storage of specimens for
+             future testing.
+
+          -  Of note, eIND application for each recipient subject will need to be approved before
+             administration of convalescent plasma
+
+        Recipient Exclusion Criteria:
+
+          -  Female subjects with positive pregnancy test, breastfeeding, or planning to become
+             pregnant/breastfeed during the study period
+
+          -  Receipt of pooled immunoglobulin in past 30 days
+
+          -  Contraindication to transfusion or history of prior reactions to transfusion blood
+             products
+
+          -  Patients currently enrolled in other drug trials that preclude investigational
+             treatment with anti-SARS-CoV-2 convalescent plasma
+      "
+#nct_id,title,has_us_facility,conditions,eligibility_criteria
+NCT04348032,Apatinib Combined With PLD vs PLD for Platinum-resistant Recurrent Ovarian Cancer,false,Platinum-resistant Recurrent Ovarian Cancer,"
+        Inclusion criteria
+
+          1. Patients were diagnosed with ovarian cancer, fallopian tube cancer or primary
+             peritoneal cancer confirmed by previous pathology, and the pathological type was
+             non-mucinous adenocarcinoma.There were previous surgical wax preservation.
+
+          2. Initial platinum-resistant relapse, the recurrence time was less than 6 months after
+             the last chemotherapy.
+
+          3. Complicated with malignant pleural effusion or ascites, or with recurrent lesions that
+             can be evaluated clinically.
+
+          4. ECOG physical status score 0 or 1.
+
+          5. The expected survival time is ≥ 4 months.
+
+          6. In the previous treatment, there was no antivascular targeted therapy;
+
+          7. Patients without pleural effusion or ascites should be confirmed by CT or MRI
+             according to the standard of RECIST1.1 version, requiring the patient to have at least
+             one measurable focus as the target focus. If the target focus is a lymph node with a
+             short diameter of more than 1.5 cm, and the target focus is not suitable for surgical
+             treatment, the target focus has not received radiotherapy or relapsed in the
+             radiotherapy field.
+
+          8. The baseline blood routine conforms to the following criteria:
+
+               1. neutrophil count ≥ 1.5x109 /L;
+
+               2. platelet count ≥ 100x109 PG L;
+
+               3. hemoglobin ≥ 9g/dL (blood transfusion is allowed to achieve or maintain this
+                  target) .
+
+          9. Liver function meets the following criteria:
+
+               1. total bilirubin<1.5 normal limit (ULN);
+
+               2. glutamic oxaloacetic transaminase (AST), glutamic pyruvic transaminase
+                  (ALT)<2.5xULN, which is allowed<5xULN in patients with liver metastasis.
+
+         10. Serum creatinine ≤ 1.25xULN or calculated creatinine clearance ≥ 50mL/min.
+
+        Exclusion criteria
+
+          1. Have received more than two chemotherapy regimens in the past.
+
+          2. Currently or recently (within 30 days before enrollment) using another research drug
+             or participating in another clinical study.
+
+          3. other malignant tumors have occurred within 5 years (except adequately treated
+             cervical carcinoma in situ or skin squamous cell carcinoma, or controlled basal cell
+             carcinoma of the skin).
+
+          4. Patients with hypertension that cannot be reduced to normal range after
+             antihypertensive treatment (systolic blood pressure ≥ 140mmHg or diastolic blood
+             pressure ≥ 90 mmHg).
+
+          5. Suffer from myocardial ischemia or myocardial infarction above II grade and poorly
+             controlled arrhythmias (including QTc interval ≥ 470ms in females).
+
+          6. According to the NYHA standard, there were previous or present cardiac insufficiency
+             of grade II or above, or color Doppler echocardiography showed that the left
+             ventricular ejection fraction ((LVEF)) was less than 50% or the lower limit of the
+             normal value.
+
+          7. Abnormal coagulation function (INR>1.5 or prothrombin time (PT) > ULN+4 seconds or
+             APTT>1.5xULN), with bleeding tendency or undergoing thrombolytic or anticoagulant
+             therapy.
+
+          8. There were significant clinical bleeding symptoms or definite bleeding tendency in the
+             first 3 months, such as gastrointestinal bleeding, hemorrhagic gastric ulcer, baseline
+             fecal occult blood or above, or suffering from vasculitis.
+
+          9. Major surgical operations or severe traumatic injuries, fractures or ulcers occurred
+             within the first 4 weeks of randomization.
+
+         10. There are significant factors affecting oral drug absorption, such as inability to
+             swallow, chronic diarrhea and intestinal obstruction.
+
+         11. Urine routine indicates urinary protein ≥++, or confirms 24-hour urinary protein ≥
+             1.0g.
+
+         12. The researchers judged other conditions that may affect the conduct of clinical
+             studies and the determination of research results.
+
+         13. Allergic or heterogeneous reactions to doxorubicin and / or related substances.
+
+         14. The cumulative dose of doxorubicin (including previous anthracycline, if any) is
+             expected to reach or exceed 550 mg after 4 courses of doxorubicin liposome injection
+             treatment.
+
+         15. Uncontrollable arrhythmias or electrocardiograms abnormalities determined by the lead
+             researcher to be at risk.
+
+         16. A history of doxorubicin liposome therapy in recent half a year.
+
+         17. Have previously received local radiotherapy of the pelvis or lower abdomen.
+      "
+NCT04348006,Assessment of Bortezomib (Alvocade ®) Efficacy and Safety in Newly Diagnosed Multiple Myeloma Patients,false,Newly Diagnosed Multiple Myeloma,"
+        Inclusion Criteria:
+
+          -  Newly diagnosis Multiple myeloma with CRAB (C: hypercalcemia, R: renal impairment, A:
+             anemia, and B: bone lesions)
+
+          -  Age above 18 years old
+
+        Exclusion Criteria:
+
+          -  Age below 18 years
+
+          -  Smoldering MM
+      "
+NCT04347811,Use of Death Cafes to Prevent Burnout in ICU Healthcare Employees,true,"Anxiety|Burnout|Burnout, Professional|Burnout, Psychological|Depression","
+        Inclusion Criteria:
+
+          -  Physicians, nurses, pharmacists, or therapists working in the University Medical
+             Center Intensive Care Unit and have worked for the full-time equivalent of at least 1
+             week in the preceding 4 weeks
+
+        Exclusion Criteria:
+
+          -  Not physicians, nurses, pharmacists, or therapists
+
+          -  Have worked less than the full-time equivalent of at least 1 week in the preceding 4
+             weeks
+      "
+NCT04347252,Glucagon Regulation of Glucose Metabolism,true,Insulin Secretion,"
+        Inclusion Criteria:
+
+          -  Healthy, fasting glucose values < 6 mM, A1c < 6%, and no first degree family members
+             with T2DM.
+
+        Exclusion Criteria:
+
+          -  Active infectious, malignant or inflammatory conditions; unstable angina or
+             uncompensated heart failure; pulmonary disorders including COPD and asthma;
+             malabsorptive GI disease; significant hepatic disease; renal insufficiency (eGFR < 50
+             ml/min/kg); anemia (hematocrit < 34%); pregnancy; and uncontrolled hypertension.
+             Subjects will be excluded if they require daily medications that alter glucose
+             metabolism or GI function (glucocorticoids, psychotropics, narcotics, metoclopramide).
+      "
+NCT04344847,"Incidental Finding of Gastrointestinal Stromal Tumors (GISTs) During Laparoscopic Sleeve Gastrectomy, How to Deal? How Much Safety Margin",false,Excision Margin,"
+        Inclusion Criteria:
+
+        All morbid obese patients with BMI more than 35
+
+        Exclusion Criteria:
+
+          -  previous gastric surgery
+
+          -  patients with hiatus hernia
+
+          -  age under 21 years
+      "
+NCT04344678,The Phosphodiesterase 5 Inhibitor Sildenafil as an Adjunct to Antidepressants in Major Depressive Disorder Patients,false,Major Depressive Disorder,"
+        Inclusion Criteria:
+
+          -  Eighty adult outpatients with the Diagnostic and Statistical Manual of Mental
+             Disorders-IV (DSM-IV) diagnosis of MDD based on a MINI Neuropsychiatric Interview
+             (MINI) (American Psychiatric Association., 2000; Sheehan et al., 1998), without
+             psychotic features and a total 17 item HAM-D score of at least 18 with item 1
+             (depressed mood) scored 2 or greater were eligible (Hamilton, 1960).
+
+          -  Patients were requested to be free of all the psychotropic and anti-inflammatory
+             medications for at least 4 weeks before participating in the study.
+
+        Exclusion Criteria:
+
+          -  Patients with bipolar I or bipolar II disorder
+
+          -  Patients with personality disorders
+
+          -  Patients with eating disorders
+
+          -  Patients with substance dependence or abuse
+
+          -  Patients with concurrent active medical condition
+
+          -  Patients with history of seizures
+
+          -  Patients with history of receiving Electroconvulsive therapy (ECT)
+
+          -  Patients with inflammatory disorders
+
+          -  Patients with allergy or contraindications to the used medications
+
+          -  Patients with finally pregnant or lactating females
+
+          -  Cardiovascular disorders
+
+          -  Severe renal impairment: creatinine clearance of ≤ 25 ml/min
+
+          -  Moderate or severe hepatic impairment
+      "
+NCT04344470,Study of Volition: Behavioral Analysis and EEG/ERP Analysis,true,Normal Physiology,"
+        -  INCLUSION CRITERIA:
+
+        In order to be eligible to participate in this study, an individual must meet all of the
+        following criteria:
+
+          -  Age between 25-45 years
+
+          -  Right-handed (tested by the Edinburg handedness inventory).
+
+          -  Able to give informed consent.
+
+          -  Able to comply with all study procedures.
+
+          -  Fluent in English.
+
+        EXCLUSION CRITERIA:
+
+        An individual who meets any of the following criteria will be excluded from participation
+        in this study:
+
+          -  Illegal drug use within the past 6 months based on history alone. The intent is to
+             exclude those with drug use that may affect study results.
+
+          -  Self-reported consumption of >14 alcoholic drinks/week for a man and >7 alcoholic
+             drinks/week for a woman.
+
+          -  Abnormal findings on neurological examination.
+
+          -  History of current brain tumor, stroke, head trauma with loss of consciousness,
+             epilepsy, or seizures.
+
+          -  Current episode of major depression or any major psychiatric illness.
+      "
+NCT04343391,Brief Psychotherapies for Emotional Disorders in Primary and Secondary Care,false,Emotional Disorder,"
+        Inclusion Criteria:
+
+          -  Emotional Disorder
+
+        Exclusion Criteria:
+
+          -  Severe mental disorder
+
+          -  Substance use disorder
+
+          -  Severe depression
+      "
+NCT04343014,Tongue Root Retractor For Fibroscopic Intubation,false,Airway Management,"
+        Inclusion Criteria:
+
+          -  aged 18 to 70 years
+
+          -  ASA graded I~II class
+
+          -  scheduled for elective surgery requiring orotracheal intubation
+
+        Exclusion Criteria:
+
+          -  with organ transplant operations
+
+          -  with thoracic and cardiac vascular surgery
+
+          -  with severe cadiac or pulmonary disease
+
+          -  BMI over 35kg/m2
+      "
+NCT04342793,A Study to Evaluate the Efficacy and Safety of ALS-L1023 in Subjects With NASH,false,Nonalcoholic Steatohepatitis,"
+        Inclusion Criteria:
+
+          -  Men or women ages 19 and over, under 75 years of age
+
+          -  Patients diagnosed with NAFLD on abdominal ultrasonography and MRI
+
+          -  Patients show presence of hepatic fat fraction as defined by ≥ 8% on MRI-PDFF and
+             liver stiffness as defined by ≥ 2.5 kPa on MRE at Screening
+
+        Exclusion Criteria:
+
+          -  Any subject with current, significant alcohol consumption or a history of significant
+             alcohol consumption for a period of more than 3 consecutive months any time within 2
+             year prior to screening will be excluded
+
+          -  Chronic liver disease (including hemochromatosis, liver cancer, autoimmune liver
+             disease, viral hepatitis A, B, alcoholic liver disease
+
+          -  Uncontrolled diabetes mellitus as defined by a HbA1c ≥ 9.0％ at Screening
+
+          -  Patients who are allergic or hypersensitive to the drug or its constituents
+
+          -  Pregnant or lactating women
+      "
