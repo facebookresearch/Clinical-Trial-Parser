@@ -3,7 +3,7 @@
 #
 # Parse clinical-trial eligibility criteria with CFG.
 #
-# ./script/cfg.sh
+# ./script/cfg_parse.sh
 
 set -eu
 

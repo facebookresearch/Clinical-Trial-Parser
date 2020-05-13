@@ -13,6 +13,7 @@
 205,numerical,arm_circumference,Arm circumference,arm_circumference,1.0|100.0,,What is your arm circumference?
 206,numerical,life_expectancy,Life expectancy,life expectancy,0.0|120.0,,What is your life expectancy?
 207,numerical,body_temperature,Body temperature,temperature|temperature measurement|fever,10.0|120,,What is your body temperature?
+208,numerical,daily_opioid_dose,Daily opioid dose,daily opioid dose,,,What is your daily opioid dose?
 300,numerical,sbp,SBP,sbp|systolic blood pressure|systolic bp|systolic,10.0|300.0,mmhg,What is your blood pressure?
 301,numerical,dbp,DBP,dbp|diastolic blood pressure|diastolic bp|diastolic,10.0|150.0,mmhg,What is your blood pressure?
 302,numerical,sbp/dbp,Blood pressure,bp|blood pressure,10.0|300.0,mmgh,What is your blood pressure?
@@ -39,7 +40,7 @@
 417,numerical,testosterone_level,Testosterone level,testosterone level|castrate testosterone level|castrate levels of testosterone|castrate level of serum testosterone|baseline testosterone|serum testosterone|serum total testosterone concentration,,,What is your castrate testosterone level?
 418,numerical,glomerular_filtration_rate,Glomerular filtration rate,gfr|egfr|glomerular filtration rate|estimated glomerular filtration rate,,,What is your estimated glomerular filtration rate?
 419,numerical,aec,AEC,absolute eosinophil count|aec,0.0|10000,,What is your absolute eosinophil count?
-420,numerical,lfts,LFTs,liver function tests|lfts|lfs,,, What are your liver function tests?
+420,numerical,lfts,LFTs,liver function tests|lfts|lfs,,,What are your liver function tests?
 421,numerical,ferritin_level,Ferritin level,ferritin,,,What is your ferretin level?
 422,numerical,magnesium_level,Magnesium level,magnesium|magnesium level,,,What is your magnesium level?
 423,numerical,calcium_level,Calcium level,calcium|calcium level,,,What is your calcium level?

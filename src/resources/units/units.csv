@@ -21,7 +21,7 @@
 407,mg/dl,mg/dl,mg/dl,
 408,m/ul,m/ul,m/ul|m/µl,
 409,k/ul,k/ul,k/ul|k/µl,
-410,cells/ul,cells/ul,cells/ul|cells/µl|cells/micro l|/ul|μl|mm3|mm^3|mmc|/mm|/mcl,
+410,cells/ul,cells/ul,cells/ul|cells/µl|cells/micro l|/ul|/µl|mm3|mm^3|mmc|/mm|/mcl,
 411,cells/ml,cells/ml,cells/ml|/ml,
 412,umol/l,umol/l,umol/l|µmol/l,
 413,mmol/l,mmol/l,mmol/l,
@@ -33,6 +33,7 @@
 501,cm,cm,cm,
 502,m,m,m,
 503,inches,inches,inches|in,
+504,mps_disc_area,MPS disc area,mps disc area*,
 600,mmhg,mmhg,mmhg|mm hg,
 601,cmh2o,cmh2o,cmh2o|cmh20,
 602,kg/m2,kg/m2,kg/m2|kg/m^2|kg/m²|kilogram per meter square*|kilograms per meter square*|weight/height^2,bmi
