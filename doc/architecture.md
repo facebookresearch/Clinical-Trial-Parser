@@ -16,7 +16,6 @@
   - [NER](#ner)
   - [NEL](#nel)
   - [Vocabularies](#vocabularies)
-  - [Clustering](#clustering)
 - [RE](#re)
   - [Negation](#negation)
   - [Aggregation](#aggregation)
@@ -24,15 +23,15 @@
 ## General
 
 The parser splits extraction by variable type. It handles 3 types of variables:
- - **Nominal Requirements**: Requirements comprising a nominal variable 
+ - **Nominal requirements**: Requirements comprising a nominal variable 
  (e.g., pregnant, leukemia, allergy) and a condition on the variable - i.e., does 
  the study require or forbid the participant to have that variable. 
  These are the most common types of requirements. Examples: "Cannot have heart disease", 
  "Can have a peanut allergy".
- - **Ordinal Requirements**: Requirements comprising an ordinal variable 
+ - **Ordinal requirements**: Requirements comprising an ordinal variable 
  (e.g., ECOG score, NYHA score) and a set of eligible values. 
  Example: "ECOG score must be 0, 1, or 2".
- - **Numerical Requirements**: Requirements comprising a numerical variable 
+ - **Numerical requirements**: Requirements comprising a numerical variable 
  (e.g., age, BMI, platelet count) and an eligible range for the variable. 
  Examples: "BMI < 40 kg/m2", "age must be ≥18 years and ≤ 35 years".
 
@@ -53,9 +52,9 @@ Ordinal and numerical requirements are extracted via context-free grammar (CFG):
 - **Parser** takes a sequence of tokens as an input and uses grammar production rules to build parse trees
 - **Interpreter** analyses the parse trees by removing duplicates and sub-trees
 
-All requirement types use:
-- **Relation Extraction (RE)**: General RE finds the relationship between 2 extracted concepts 
-(e.g., X is married to Y). The clinical trial RE finds the relationship between trial criteria 
+All requirement types should use:
+- **Relation extraction (RE)**: General RE finds the relation between 2 extracted concepts 
+(e.g., X is married to Y). The clinical trial RE finds the relation between trial criteria 
 and extracted variables, or in other words, the RE determines the condition a trial requires 
 for a specific variable (e.g., determining the difference between "must have heart disease" 
 and "must not have heart diseases").
@@ -95,7 +94,7 @@ are frequently syntactically imperfect.
 ### Parser
 
 The parser takes a sequence of tokens as an input and uses grammar production rules to build parse trees. 
-Note: the lexer tokens are the terminal nodes of the grammar production rules.
+The lexer tokens are the terminal nodes of the grammar production rules.
 
 The parser uses the modified Cocke–Younger–Kasami (CYK) algorithm, which accepts grammar production rules 
 that are in the binary normal form. The binary form ensures an efficient parsing algorithm. 
@@ -121,16 +120,22 @@ samples. Overall F1 of NER extraction is about 0.88.
 ### NEL
 
 Medical variable NEL begins by normalizing the extracted variables by removing common non-significant words.
-Normalized terms are directly linked to medical concepts from an ontology. Links between terms and concepts could 
-also be computed by grouping terms into clusters with word embeddings. The clustered terms can then be matched to 
-additional medical concepts. This grounding of extracted terms to controlled medical concepts gives the medical variables 
-and machine-readable nominal relations. This is useful because:
+Normalized terms are directly linked to medical concepts from an ontology. This grounding of extracted terms 
+to controlled medical concepts gives the medical variables and machine-readable nominal relations. 
+This is useful because:
 
 - Duplicate entities are removed
 - Synonym entities are grounded to same concepts
 - Grounded entities are given a hierarchy, which is useful when filtering on vague requirements 
 in favor of more specific requirements (e.g., filter requirements for "cancer" in favor of requirements for "breast cancer")
 - Grounded entities are linked to IDs, which are an industry standard and useful for interoperability
+
+There are multiple ways to reference a medical concept. For example, some clinical trials use 
+the terms "neoplasm", "tumor", and "cancer" interchangeably. Extracted terms may also include a variable 
+number and type of qualifiers. Because of this a simple linking of extracted terms to concepts
+may lead to a low recall. We experimented by projecting the cleaned and extracted terms into 
+an embedding space and clustering the term vectors. The clustered terms can then be matched to 
+additional medical concepts. This improved the NEL recall.
 
 ### Vocabularies
 
@@ -160,24 +165,17 @@ MeSH concepts.
  | *Curated Hierarchy for Technology Access Requirements* |
 
 
-### Clustering
-
-There are multiple ways to reference a medical concept. For example, some clinical trials use 
-the terms "neoplasm", "tumor", "cancer" interchangeably. Extracted terms may also include a variable 
-number and type of qualifiers. Because of this a simple linking of extracted terms to concepts
-may lead to a low recall. We experimented by projecting the cleaned and extracted terms into 
-an embedding space and clustering the term vectors. Using a statistical analysis, groundings 
-were propagated to ungrounded terms. This improved the NEL recall.
-
 ## RE
+
+The architecture design references relation extraction (RE), which we have demonstrated to be feasible 
+but have [not yet included](TODO.md) in the parser implementation.
 
 ### Negation
 
-The implementation relies on rules for negation detection. Every nominal requirement is worded 
-in such a way as to either include or preclude participation depending on certain characteristics 
-(e.g. "participants must be pregnant" vs "participants cannot be pregnant"). Correctly parsing 
-the negation is the same as either parsing the requirement exactly right or exactly wrong. Unfortunately, 
-the criteria writers sometimes incorrectly structure their requirements leading to logical paradoxes. 
+Nominal requirements are worded in such a way as to either include or preclude participation 
+depending on certain characteristics (e.g. "participants must be pregnant" vs "participants cannot be pregnant").
+Negations can be detected using [NegEx](https://code.google.com/archive/p/negex/) or similar public algorithms.
+Criteria are sometimes incorrectly formulated leading to logical paradoxes. 
 For example, a study might list "not pregnant" as a requirement in both the inclusion and exclusion 
 criteria sections. Readers must know the context and the common practice to determine that the study 
 is actually simply asking for participants that are not pregnant.
@@ -185,15 +183,7 @@ is actually simply asking for participants that are not pregnant.
 ### Aggregation
 
 For the sake of extra clarity at the cost of being redundant, studies often stipulate the same 
-requirement in many ways (i.e. a study might list "participants cannot be pregnant" in 
-the inclusion section while also listing  "participants who are pregnant" in the exclusion section). 
-The IE picks up on all mentions of requirements, and sometimes mistakenly interprets the same 
-requirement twice. To remove contradictory requirements it is necessary to aggregate and deduplicate 
-requirements on a trial level.
-
-To do so, we use a series of rules that work on the requirement level. For each requirement, 
-the rules take into account detected negation, inclusion/exclusion criteria section and 
-condition overrides by domain. The condition overrides were implemented based on the observation 
-that conditions across certain domains are universal. For example, whenever a study mentions 
-"contraception consent" it is always in the affirmative. Studies never require participants 
-to not consent to contraception.
+requirement in multiple ways (i.e. a study might list "participants cannot be pregnant" in 
+the inclusion section while also listing "participants who are pregnant" in the exclusion section). 
+The IE may mistakenly interpret the same requirement twice. To remove contradictory requirements 
+it is necessary to aggregate and deduplicate requirements on a trial level.
