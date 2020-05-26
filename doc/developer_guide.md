@@ -63,7 +63,7 @@ Applications may write their own driver modules.
   - Incorporating a vocabulary that has a high match rate with the eligibility criteria terms
   - Adding synonyms to concepts or new synonyms to the [custom MeSH files](../data/mesh)
   - Implementing term clustering to increase the NEL recall
-- Implementing RE with negation extraction
+- Implement RE with negation extraction
 
 ## Data
 
