@@ -92,7 +92,7 @@ Extracted relations on variables are formatted with the following JSON fields:
 
 The parser splits extraction by variable type. It handles 3 types of variables:
 
- - **Nominal Requirements**: Requirements comprising a nominal variable (e.g. pregnant, leukemia, allergy) and a condition on the variable (i.e. does the study require or forbid the participant to have said variable). 
+ - **Nominal requirements**: Requirements comprising a nominal variable (e.g. pregnant, leukemia, allergy) and a condition on the variable (i.e. does the study require or forbid the participant to have said variable). 
  These are the most common types of requirements. Examples:
       - The inclusion criterion for the clinical trial [NCT03442400](https://www.clinicaltrials.gov/ct2/show/record/NCT03442400), 
       \
@@ -110,7 +110,7 @@ The parser splits extraction by variable type. It handles 3 types of variables:
       \
       `{"id":["C01.925"],"name":"COVID-19","value":["yes"],"variableType":"nominal","score":1}`
 
- - **Ordinal Requirements**: Requirements comprising an ordinal variable (e.g. ECOG score, NYHA class) and a set of eligible values. Examples:
+ - **Ordinal requirements**: Requirements comprising an ordinal variable (e.g. ECOG score, NYHA class) and a set of eligible values. Examples:
      
       - The exclusion criterion for the clinical trial [NCT03367871](https://www.clinicaltrials.gov/ct2/show/record/NCT03367871), 
       \
@@ -120,7 +120,7 @@ The parser splits extraction by variable type. It handles 3 types of variables:
       \
       `{"id":"100","name":"ecog","value":["0","1"],"variableType":"ordinal","score":1}`
 
- - **Numerical Requirements**: Requirements comprising a numerical variable (e.g. age, BMI, platelet count) and an eligible range for the variable. Examples: 
+ - **Numerical requirements**: Requirements comprising a numerical variable (e.g. age, BMI, platelet count) and an eligible range for the variable. Examples: 
  
       - The inclusion criterion for the clinical trial [NCT04272255](https://www.clinicaltrials.gov/ct2/show/record/NCT04272255), 
       \
@@ -149,17 +149,19 @@ The parser splits extraction by variable type. It handles 3 types of variables:
 ### Quality
 
 The quality of the parser is measured by randomly sampling eligibility criteria from recruiting trials. 
-The CFG model is estimated to parse ordinal and numerical requirements with the precision of ≥ 90% and recall ≥ 85%. 
-The IE model is estimated to parse nominal requirements with the precision of approximately 44% for heart-condition 
-related criteria. Although the precision of NER is estimated to be ~ 88%, the grounding of extracted entity 
-mentions to medical concepts lowers the IE quality, because the differences between the eligibility criteria 
-and the [Medical Subject Headings](https://www.nlm.nih.gov/mesh/meshhome.html) (MeSH) vocabulary lead to 
+The CFG model is estimated to parse ordinal and numerical requirements with the precision of ≥ 90% and 
+recall ≥ 85% per implemented variable. The IE model is estimated to parse nominal requirements with 
+the precision of approximately 44% for heart-condition related criteria. Although the precision of 
+NER is estimated to be ~ 88%, the grounding of extracted entity mentions to medical concepts lowers 
+the IE quality, because the differences between the eligibility criteria and 
+the [Medical Subject Headings](https://www.nlm.nih.gov/mesh/meshhome.html) (MeSH) vocabulary lead to 
 imperfect NEL and because criteria are sometimes written ambiguously. The extracted concepts are grounded 
 to about 6K medical variables.
 
 ## Requirements
 
-This library works with Mac OS X or Linux.
+This library works with Mac OS X or Linux. The [developer guide](doc/developer_guide.md) describes how to set up the project 
+and prepare the resources.
 
 - The CFG parser module requires [Go 1.11](https://golang.org/dl/) or higher
 
@@ -183,7 +185,7 @@ go build ./...
 go test ./...
 ```
 
-To train a NER model, run:
+To train a new NER model, run:
 ```
 pytext train < src/resources/config/ner.json
 ```
