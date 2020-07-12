@@ -148,8 +148,12 @@ func (p *Parser) Parse() {
 		relationCnt += study.RelationCount()
 
 	}
-	glog.Infof("Studies: %d, Criteria: %d, Parsed criteria: %d, Relations: %d, Relations per criteria: %.1f%%\n",
-		p.registry.Len(), criteriaCnt, parsedCriteriaCnt, relationCnt, 100*float64(relationCnt)/float64(criteriaCnt))
+	ratio := 0.0
+	if criteriaCnt > 0 {
+		ratio = 100 * float64(relationCnt) / float64(criteriaCnt)
+	}
+	glog.Infof("Ingested studies: %d, Extracted criteria: %d, Parsed criteria: %d, Relations: %d, Relations per criteria: %.1f%%\n",
+		p.registry.Len(), criteriaCnt, parsedCriteriaCnt, relationCnt, ratio)
 }
 
 // Close closes the parser.

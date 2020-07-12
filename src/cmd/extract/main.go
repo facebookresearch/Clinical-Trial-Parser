@@ -111,6 +111,7 @@ func (p *Extractor) Extract() error {
 	writer := fio.Writer(fname)
 	defer writer.Close()
 
+	criteriaCnt := 0
 	writer.WriteString(header)
 	for _, study := range p.registry {
 		inclusions, exclusions := study.Criteria()
@@ -124,7 +125,9 @@ func (p *Extractor) Extract() error {
 				return err
 			}
 		}
+		criteriaCnt += len(inclusions) + len(exclusions)
 	}
+	glog.Infof("Ingested studies: %d, Extracted criteria: %d\n", p.registry.Len(), criteriaCnt)
 	return nil
 }
 
