@@ -1,0 +1,29 @@
+version: "3.5"
+
+services: 
+  # python:
+  #   container_name: python
+  #   image: python:3.8.3-buster
+  #   entrypoint: ["tail", "-f", "/dev/null"]
+  #   tty: true
+  # golang:
+  #   container_name: golang
+  #   image: golang:1.14.4-buster
+  #   entrypoint: ["tail", "-f", "/dev/null"]
+  #   tty: true
+  db:
+    container_name: postgres
+    image: postgres:12.2-alpine
+    ports:
+        - "5432:5432"
+    environment: 
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: aact
+    volumes:
+        - ./script:/usr/local/script/
+        - ./script/aact.sh:/docker-entrypoint-initdb.d/aact.sh
+        - ./data/aact:/usr/local/data/aact/
+    # command: bash -c "chmod +x /usr/local/aact.sh"
+    # && /usr/local/aact.sh 20200802 goland
+    tty: true

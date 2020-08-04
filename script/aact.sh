@@ -6,34 +6,39 @@
 # The dump file is deleted at the end.
 #
 # DATE is YYYYMMDD.
-#
 # ./script/aact.sh <DATE>
 
 set -eu
 
-DATE=$1
-DIR="data/aact"
+# DATE=$1
+DIR="/usr/local/data/aact"
 DB=aact
+DATE=20200802
 ZIP_FILE="${DATE}_clinical_trials.zip"
 
 mkdir -p "$DIR"
 
-if ! wget -P "$DIR" "https://aact.ctti-clinicaltrials.org/static/static_db_copies/daily/$ZIP_FILE"
-then
-  rm -f "$DIR/$ZIP_FILE"
-  echo "Download failed."
-  exit 1
-fi
+# if ! wget -P "$DIR" "https://aact.ctti-clinicaltrials.org/static/static_db_copies/daily/$ZIP_FILE"
+# then
+#   rm -f "$DIR/$ZIP_FILE"
+#   echo "Download failed."
+#   exit 1
+# fi
 
-unzip -o -d "$DIR" "$DIR/$ZIP_FILE"
+# unzip -o -d "$DIR" "$DIR/$ZIP_FILE"
 
-dropdb --if-exists "$DB"
-createdb "$DB"
-pg_restore -U "$USER" -e -v -O -x --dbname="$DB" "${DIR}/postgres_data.dmp"
-psql -d "$DB" -c "ALTER ROLE $USER SET search_path TO ctgov,public;"
+set -e
+
+# psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname "$POSTGRES_DB" <<-EOSQL
+# 	GRANT ALL PRIVILEGES ON DATABASE $POSTGRES_DB TO $POSTGRES_USER;
+# EOSQL
+# dropdb -U "$POSTGRES_USER" --if-exists "$DB"
+# createdb -U "$POSTGRES_USER" "$DB"
+
+pg_restore -U "$POSTGRES_USER" -e -v -O -x --dbname="$DB" "${DIR}/postgres_data.dmp"
+psql -U "$POSTGRES_USER" -d "$DB" -c "ALTER ROLE $POSTGRES_USER SET search_path TO ctgov,public;"
 
 # Check the download:
-
 YEAR=$(date +'%Y')
 echo "Year: $YEAR"
 
@@ -78,6 +83,6 @@ ORDER BY
     3 DESC;
 "
 
-psql -U "$USER" -d "$DB" -c "$QUERY"
+psql -U "$POSTGRES_USER" -d "$DB" -c "$QUERY"
 
-rm "$DIR/postgres_data.dmp"
+# rm "$DIR/postgres_data.dmp"
