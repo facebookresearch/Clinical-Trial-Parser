@@ -1,3 +1,4 @@
 pytext-nlp
 nltk
 numpy
+fasttext

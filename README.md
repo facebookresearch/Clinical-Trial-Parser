@@ -1,3 +1,10 @@
+# Containerization of Clinical Trial Parser
+
+- Splitting  .sh scripts into python/ go/ postgres
+- Docker-compose to spin up a docker python/ go/ postgres
+     - Issue: Installating pytext is resulting in fault segmentation bug (see developer guide)
+
+
 ![Build](https://github.com/facebookresearch/Clinical-Trial-Parser/workflows/Build/badge.svg)
 
 # Clinical Trial Parser
@@ -224,3 +231,7 @@ Thanks to the [Clinical Trials Transformation Initiative](https://www.ctti-clini
 
 Clinical Trial Parser is Apache 2.0 licensed, as found in the [LICENSE file](LICENSE). 
 Facebook assumes no responsibility for the resulting use of this library.
+
+
+## GOROOT with scoop (windows)
+$env:GOROOT = "C:\Users\username\scoop\apps\Go\version"

@@ -16,7 +16,7 @@ options = {
     "maxn": 0,
     "lr": 0.05,
     "epoch": 20,
-    "thread": 12,
+    "thread": 4,
     "verbose": 2,
 }
 

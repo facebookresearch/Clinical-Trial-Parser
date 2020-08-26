@@ -6,6 +6,10 @@
 *.xml
 *.RRF
 aact/
+data/aact/*
+data/input/*.txt
+data/output/ie_extracted_*.tsv
+
 
 __pycache__
 *.py[codi]

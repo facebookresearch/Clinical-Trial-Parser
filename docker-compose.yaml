@@ -1,16 +1,30 @@
 version: "3.5"
 
 services: 
-  # python:
-  #   container_name: python
-  #   image: python:3.8.3-buster
-  #   entrypoint: ["tail", "-f", "/dev/null"]
-  #   tty: true
-  # golang:
-  #   container_name: golang
-  #   image: golang:1.14.4-buster
-  #   entrypoint: ["tail", "-f", "/dev/null"]
-  #   tty: true
+  python:
+    build:
+      context: .
+      dockerfile: ./script/python/Dockerfile
+    # image: pytorch/pytorch:latest
+    container_name: python
+    # image: python:3.8.3-slim-buster
+    # image: continuumio/anaconda3:2020.02
+    volumes: 
+      - ./script/python:/usr/local/script/python
+      - ./src:/usr/local/src
+      - ./data:/usr/local/data
+    entrypoint: ["/usr/local/script/python/entrypoint.sh"]
+    tty: true
+  golang:
+    container_name: golang
+    image: golang:1.14.4-buster
+    volumes: 
+      - ./script:/go/script
+      - ./src:/go/src/github.com/facebookresearch/Clinical-Trial-Parser/src
+      - ./data:/go/data
+    entrypoint: ["tail", "-f", "/dev/null"]
+    tty: true
+    # cd /go/src/github.com/facebookresearch/Clinical-Trial-Parser && go get -v -t -d ./...
   db:
     container_name: postgres
     image: postgres:12.2-alpine
@@ -21,9 +35,8 @@ services:
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: aact
     volumes:
-        - ./script:/usr/local/script/
-        - ./script/aact.sh:/docker-entrypoint-initdb.d/aact.sh
-        - ./data/aact:/usr/local/data/aact/
+        - ./script/postgres:/docker-entrypoint-initdb.d
+        - ./data/:/usr/local/data
+    tty: true
     # command: bash -c "chmod +x /usr/local/aact.sh"
     # && /usr/local/aact.sh 20200802 goland
-    tty: true

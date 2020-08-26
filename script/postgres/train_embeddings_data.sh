@@ -8,8 +8,12 @@
 
 set -eu
 
-INGEST_FILE="data/input/clinical_trial_descriptions.txt"
-EMBEDDING_FILE="data/embedding/word_embeddings"
+INGEST_PATH="/usr/local/data/input"
+INGEST_FILE="/usr/local/data/input/clinical_trial_descriptions.txt"
+EMBEDDING_FILE="/usr/local/data/embedding/word_embeddings"
+
+mkdir -p "$INGEST_PATH"
+touch "$INGEST_FILE"
 
 DB=aact
 LENGTH_LIMIT=20
@@ -25,7 +29,7 @@ WHERE
 )
 TO STDOUT"
 
-psql -U "$USER" -d "$DB" -c "$QUERY" > "$INGEST_FILE"
+psql -U "$POSTGRES_USER" -d "$DB" -c "$QUERY" > "$INGEST_FILE"
 
 echo "Ingest detailed trial descriptions..."
 QUERY="\COPY (
@@ -38,7 +42,7 @@ WHERE
 )
 TO STDOUT"
 
-psql -U "$USER" -d "$DB" -c "$QUERY" >> "$INGEST_FILE"
+psql -U "$POSTGRES_USER" -d "$DB" -c "$QUERY" >> "$INGEST_FILE"
 
 echo "Ingest trial eligibility criteria..."
 QUERY="\COPY (
@@ -51,18 +55,7 @@ WHERE
 )
 TO STDOUT"
 
-psql -U "$USER" -d "$DB" -c "$QUERY" >> "$INGEST_FILE"
+psql -U "$POSTGRES_USER" -d "$DB" -c "$QUERY" >> "$INGEST_FILE"
 
 gshuf -o "$INGEST_FILE" < "$INGEST_FILE"
 wc -l "$INGEST_FILE"
-
-echo "Train embedding vectors..."
-export PYTHONPATH="$(pwd)/src"
-if ! python src/embedding/train_embeddings.py -i "$INGEST_FILE" -o "$EMBEDDING_FILE"
-then
-  echo "Embedding training failed."
-  rm -f "$EMBEDDING_FILE"
-  exit 1
-fi
-
-rm $INGEST_FILE

@@ -13,7 +13,7 @@ import fasttext
 import numpy as np
 from argparse import ArgumentParser
 
-import embedding.param as param
+import param as param
 from text.transformer import Transformer
 
 
@@ -94,7 +94,7 @@ def nearest_neighbors(w1, model, top=40):
         if score > 0.5:
             scores[(w2, f2)] = score
 
-    if len(scores) is 0:
+    if len(scores) == 0:
         print(f"No nearest neighbors for '{w1}'")
         return
 
