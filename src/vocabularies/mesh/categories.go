@@ -39,6 +39,7 @@ var ClinicalCategories = map[string]string{
 	"F": "Psychiatry and Psychology",
 	"G": "Biological Sciences",
 	"M": "Persons",
+	"V": "Publication Characteristics",
 }
 
 // AnimalCodes list codes for animal categories
