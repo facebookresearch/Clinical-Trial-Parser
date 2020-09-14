@@ -71,3 +71,4 @@ The library includes example scripts [aact.sh](../script/aact.sh) and [ingest.sh
 for downloading and ingesting clinical trials. While the scripts are provided for convenience, 
 applications will most likely need to change them or use other means to do the same. For example, 
 `ingest.sh` only samples few trials. An obvious place to start is to change the 'where' clauses.
+Note that these scripts use a [postgreSQL database](https://www.postgresql.org/download/).
