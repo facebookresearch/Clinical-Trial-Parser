@@ -2,7 +2,7 @@
 100,ordinal,ecog,ECOG,ecog|eastern cooperative oncology group|ecog performance grade|ecog performance status|ecog ps|eastern cooperative oncology group performance status,0|1|2|3|4,,What is your ECOG performance status?
 101,ordinal,gleason_score,Gleason score,gleason|gleason score|gleason grade,1|2|3|4|5|6|7|8|9|10,,What is your Gleason score?
 102,ordinal,nyha,NYHA,nyha|new york heart association|new york heart association classification,1|2|3|4,,What is your NYHA class?
-103,ordinal,cps,Child-Pugh score,child pugh|child-pugh|child-pugh score,5|6|7|8|9|10|11|12|13|14|15,,What is your Child-Pugh score?
+103,ordinal,cps,Child-Pugh score,child pugh|childs pugh|child-pugh|child-pugh score,5|6|7|8|9|10|11|12|13|14|15,,What is your Child-Pugh score?
 104,ordinal,fitzpatrick_skin_type,Fitzpatrick skin type,fitzpatrick skin type*|Fitzpatrick phototype*|fitzpatrick,1|2|3|4|5|6,,What is your Fitzpatrick skin type?
 105,ordinal,fitzpatrick_wrinkle_scale,Fitzpatrick wrinkle scale,fitzpatrick wrinkle,1|2|3|4|5|6|7|8|9,,What is your Fitzpatrick wrinkle scale?
 200,numerical,age,Age,age|ages|aged,0.0|120.0,year,How old are you?
