@@ -219,6 +219,7 @@ func (m *Matcher) Match() error {
 
 	defaultCategories := set.New()
 	cancerCategories := set.New("C")
+	personCategories := set.New("M")
 
 	fname := m.parameters.Get("input_file")
 	file, err := os.Open(fname)
@@ -260,9 +261,14 @@ func (m *Matcher) Match() error {
 			subterms := slot.SubTerms()
 			for _, subterm := range subterms {
 				if _, ok := matchedSlots[subterm]; !ok {
-					validCategories := defaultCategories
-					if slot.label == "word_scores:cancer" {
+					var validCategories set.Set
+					switch slot.label {
+					case "word_scores:cancer":
 						validCategories = cancerCategories
+					case "word_scores:gender":
+						validCategories = personCategories
+					default:
+						validCategories = defaultCategories
 					}
 					matchedSlots[subterm] = m.vocabulary.Match(subterm, matchMargin, validCategories)
 				}

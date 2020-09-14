@@ -31,12 +31,16 @@ Men	men
 Men	man
 Men	males
 Men	male
+Men	male subject
 Men	female male
+Men	men women
 Women	women
 Women	woman
 Women	females
 Women	female
+Women	female subject
 Women	female male
+Women	men women
 Breast Feeding	nursing
 Breast Feeding	lactating
 Breast Feeding	breastfeed
@@ -180,3 +184,4 @@ COVID-19	2019-ncov	C01.925
 COVID-19	covid disease	C01.925
 COVID-19	covid infection	C01.925
 COVID-19	sars-cov2 infection	C01.925
+Pacemaker, Artificial	pacemaker	E07.305.250.750

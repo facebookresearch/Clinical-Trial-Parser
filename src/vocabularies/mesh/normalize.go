@@ -140,6 +140,7 @@ var generalWords = set.New(
 	"similar",
 	"smaller",
 
+	"aged",
 	"another",
 	"based",
 	"before",
