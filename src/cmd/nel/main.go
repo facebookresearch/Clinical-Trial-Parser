@@ -176,6 +176,57 @@ func getNERSlots(termStr string, nerThreshold float64, validLabels set.Set) Slot
 		glog.Fatal(termStr, err)
 	}
 	slots := NewSlots()
+
+	label := data["label"].(string)
+
+	if validLabels.Contains(label) {
+		term := data["term"].(string)
+		score := data["score"].(float64)
+		norm := reParentheses.ReplaceAllString(term, " ")
+		norm = strings.TrimSpace(norm)
+		if len(norm) > 0 {
+			term = norm
+		}
+		slots.Add(label, term, score)
+	}
+	return slots
+}
+
+// 	for label, values := range data {
+// 		if validLabels.Contains(label) {
+// 			for _, fields := range values.([]interface{}) {
+// 				var term string
+// 				var score float64
+// 				for _, f := range fields.([]interface{}) {
+// 					switch f.(type) {
+// 					case string:
+// 						term = f.(string)
+// 					case float64:
+// 						score = f.(float64)
+// 					default:
+// 						glog.Fatalf("unknown type: %v", f)
+// 					}
+// 				}
+// 				norm := reParentheses.ReplaceAllString(term, " ")
+// 				norm = strings.TrimSpace(norm)
+// 				if len(norm) > 0 {
+// 					term = norm
+// 				}
+// 				if score > nerThreshold && len(term) > 0 {
+// 					slots.Add(label, term, score)
+// 				}
+// 			}
+// 		}
+// 	}
+// 	return slots
+// }
+
+func getNERSlotsOrg(termStr string, nerThreshold float64, validLabels set.Set) Slots {
+	var data map[string]interface{}
+	if err := json.Unmarshal([]byte(termStr), &data); err != nil {
+		glog.Fatal(termStr, err)
+	}
+	slots := NewSlots()
 	for label, values := range data {
 		if validLabels.Contains(label) {
 			for _, fields := range values.([]interface{}) {

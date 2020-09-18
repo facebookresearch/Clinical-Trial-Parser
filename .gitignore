@@ -6,6 +6,7 @@
 *.xml
 *.RRF
 aact/
+data/
 data/aact/*
 data/input/*.txt
 data/output/ie_extracted_*.tsv

@@ -1,42 +1,42 @@
 version: "3.5"
 
 services: 
-  python:
-    build:
-      context: .
-      dockerfile: ./script/python/Dockerfile
-    # image: pytorch/pytorch:latest
-    container_name: python
-    # image: python:3.8.3-slim-buster
-    # image: continuumio/anaconda3:2020.02
-    volumes: 
-      - ./script/python:/usr/local/script/python
-      - ./src:/usr/local/src
-      - ./data:/usr/local/data
-    entrypoint: ["/usr/local/script/python/entrypoint.sh"]
-    tty: true
+  # python:
+  #   build:
+  #     context: .
+  #     dockerfile: ./script/python/Dockerfile
+  #   container_name: python
+  #   # image: pytorch/pytorch:latest
+  #   # image: python:3.8.3-slim-buster
+  #   # image: continuumio/anaconda3:2020.02
+  #   volumes: 
+  #     - ./script/python:/usr/local/script/python
+  #     - ./src:/usr/local/src
+  #     - ./data:/usr/local/data
+  #   entrypoint: ["/usr/local/script/python/entrypoint.sh"]
+  #   tty: true
   golang:
     container_name: golang
     image: golang:1.14.4-buster
     volumes: 
       - ./script:/go/script
       - ./src:/go/src/github.com/facebookresearch/Clinical-Trial-Parser/src
-      - ./data:/go/data
+      - ./data:/go/src/github.com/facebookresearch/Clinical-Trial-Parser/data
     entrypoint: ["tail", "-f", "/dev/null"]
     tty: true
     # cd /go/src/github.com/facebookresearch/Clinical-Trial-Parser && go get -v -t -d ./...
-  db:
-    container_name: postgres
-    image: postgres:12.2-alpine
-    ports:
-        - "5432:5432"
-    environment: 
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: aact
-    volumes:
-        - ./script/postgres:/docker-entrypoint-initdb.d
-        - ./data/:/usr/local/data
-    tty: true
-    # command: bash -c "chmod +x /usr/local/aact.sh"
-    # && /usr/local/aact.sh 20200802 goland
+  # db:
+  #   container_name: postgres
+  #   image: postgres:12.2-alpine
+  #   ports:
+  #       - "5432:5432"
+  #   environment: 
+  #     POSTGRES_USER: postgres
+  #     POSTGRES_PASSWORD: postgres
+  #     POSTGRES_DB: aact
+  #   volumes:
+  #       - ./script/postgres:/docker-entrypoint-initdb.d
+  #       - ./data/:/usr/local/data
+  #   tty: true
+  #   # command: bash -c "chmod +x /usr/local/aact.sh"
+  #   # && /usr/local/aact.sh 20200802 goland

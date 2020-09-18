@@ -1,0 +1,42 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "GO Launch file",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${file}"
+        },
+        {
+            "name": "Go Launch",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${fileDirname}",
+            "env": {},
+            "args": [
+                "-conf", "${workspaceFolder}/src/resources/config/nel.conf",
+                "-i", "${workspaceFolder}/data/output/ie_ner_clinical_trials.tsv",
+                "-o", "${workspaceFolder}/data/output/ie_parsed_clinical_trials.tsv",
+                "-logtostderr"
+            ]
+        },
+        {
+            "name": "Go Launch Package",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}/src/cmd/nel/main.go",
+            "args": [
+                "-conf", "D:/Dev/repos/src/github.com/facebookresearch/Clinical-Trial-Parser/src/resources/config/nel.conf",
+                "-i", "${workspaceFolder}/data/output/ie_ner_clinical_trials.tsv",
+                "-o", "${workspaceFolder}/data/output/ie_parsed_clinical_trials.tsv",
+                "-logtostderr"
+            ]
+        },
+    ]
+}

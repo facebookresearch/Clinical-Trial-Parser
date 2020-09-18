@@ -235,3 +235,9 @@ Facebook assumes no responsibility for the resulting use of this library.
 
 ## GOROOT with scoop (windows)
 $env:GOROOT = "C:\Users\username\scoop\apps\Go\version"
+
+## GOPATH Windows CMD
+C:\> set GOPATH="C:\username\src"
+
+## GOPATH Windows PowerShell
+PS C:\> $env:GOPATH="c:\username\src"
