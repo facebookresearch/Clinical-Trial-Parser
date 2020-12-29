@@ -7,6 +7,6 @@
 
 set -eu
 
-DESCRIPTOR=desc2020.xml
+DESCRIPTOR=desc2021.xml
 
 curl ftp://nlmpubs.nlm.nih.gov/online/mesh/MESH_FILES/xmlmesh/${DESCRIPTOR} -o data/mesh/${DESCRIPTOR}
