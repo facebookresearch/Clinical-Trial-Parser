@@ -211,7 +211,7 @@ The IE parser can be run by executing:
 ```
 
 The sample input and output of the script are [`clinical_trials.csv`](data/input/clinical_trials.csv)
-and [`ie_parsed_clinical_trials.csv`](data/output/ie_parsed_clinical_trials.csv).
+and [`ie_parsed_clinical_trials.tsv`](data/output/ie_parsed_clinical_trials.tsv).
 
 ## Acknowledgement
 
